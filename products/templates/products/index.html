@@ -1,0 +1,9 @@
+{% if product_list %}
+    <ul>
+    {% for item in product_list %}
+        <li>{{ item.item_name}} : {{ item.price }} tk</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No itemes are available.</p>
+{% endif %}

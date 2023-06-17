@@ -1,0 +1,5 @@
+<form action="/products/addProduct/" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit",name="Add this product">Create new</button>
+</form>
